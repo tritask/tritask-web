@@ -1,5 +1,9 @@
 # Tritask
 
+執筆のように。プログラミングのように。テキストエディタでガシガシ編集するストレスフリーなタスク管理。
+
+![tritask_menu.jpg](tritask_menu.jpg)
+
 ## 概要
 - [タスク管理ツール Tritask のコンセプト - タスク管理に恋してる](https://ilovetaskmanagement.hatenablog.com/entry/2018/10/09/204331)
 - [tritask/tritask-spec: タスク管理メソッド Tritask の概要と仕様](https://github.com/tritask/tritask-spec)
