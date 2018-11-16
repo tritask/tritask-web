@@ -1,0 +1,1734 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="クリップボードへコピー">
+      
+        <meta name="lang:clipboard.copied" content="コピーしました">
+      
+        <meta name="lang:search.language" content="jp">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="何も見つかりませんでした">
+      
+        <meta name="lang:search.result.one" content="1件見つかりました">
+      
+        <meta name="lang:search.result.other" content="#件見つかりました">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-　、。，．]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.4, mkdocs-material-2.9.1">
+    
+    
+      
+        <title>Tritask スタートアップガイド - Tritask</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.ba0fd1a6.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#tritask" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../index.html" title="Tritask" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Tritask
+              </span>
+              <span class="md-header-nav__topic">
+                Tritask スタートアップガイド
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            検索キーワードを入力してください
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    Tritask
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../index.html" title="Tritask" class="md-nav__link">
+      Tritask
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../concept/index.html" title="Tritask のコンセプト" class="md-nav__link">
+      Tritask のコンセプト
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Tritask スタートアップガイド
+      </label>
+    
+    <a href="index.html" title="Tritask スタートアップガイド" class="md-nav__link md-nav__link--active">
+      Tritask スタートアップガイド
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目次</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="想定読者" class="md-nav__link">
+    想定読者
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" title="(1) タスク管理に取り組んでいる方" class="md-nav__link">
+    (1) タスク管理に取り組んでいる方
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" title="(2) 秀丸エディタを利用している方" class="md-nav__link">
+    (2) 秀丸エディタを利用している方
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-python" title="(3) Python をインストールできる方" class="md-nav__link">
+    (3) Python をインストールできる方
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tritask_1" title="Tritask について" class="md-nav__link">
+    Tritask について
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tritask_2" title="Tritask とは" class="md-nav__link">
+    Tritask とは
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="タスクの開始と終了" class="md-nav__link">
+    タスクの開始と終了
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tritask_3" title="Tritask で出来ること" class="md-nav__link">
+    Tritask で出来ること
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tritask_4" title="Tritask で（工夫すれば）出来なくもないこと" class="md-nav__link">
+    Tritask で（工夫すれば）出来なくもないこと
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tritask_5" title="Tritask で出来ないこと" class="md-nav__link">
+    Tritask で出来ないこと
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="セットアップ" class="md-nav__link">
+    セットアップ
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" title="1. 必要なプログラムと設定" class="md-nav__link">
+    1. 必要なプログラムと設定
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" title="2. データファイルを準備" class="md-nav__link">
+    2. データファイルを準備
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" title="3. データファイルに区切りを入れる" class="md-nav__link">
+    3. データファイルに区切りを入れる
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" title="4. タスクを登録してみる" class="md-nav__link">
+    4. タスクを登録してみる
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="操作イメージ" class="md-nav__link">
+    操作イメージ
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" title="1. 管理画面を開く" class="md-nav__link">
+    1. 管理画面を開く
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" title="2. 操作する" class="md-nav__link">
+    2. 操作する
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="私の例" class="md-nav__link">
+    私の例
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" title="ワークフロー" class="md-nav__link">
+    ワークフロー
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_3" title="1. タスクを洗い出す" class="md-nav__link">
+    1. タスクを洗い出す
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_3" title="2. タスクを並べ替える" class="md-nav__link">
+    2. タスクを並べ替える
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" title="3. 今日やるものとそれ以外を決める" class="md-nav__link">
+    3. 今日やるものとそれ以外を決める
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" title="4. 今日やるタスクを消化する" class="md-nav__link">
+    4. 今日やるタスクを消化する
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" title="5. 明日になったら？" class="md-nav__link">
+    5. 明日になったら？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" title="6. インボックスやメモを書きたいのですが？" class="md-nav__link">
+    6. インボックスやメモを書きたいのですが？
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" title="基本操作" class="md-nav__link">
+    基本操作
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" title="タスクの追加/削除/更新/複製" class="md-nav__link">
+    タスクの追加/削除/更新/複製
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" title="タスクの開始と終了" class="md-nav__link">
+    タスクの開始と終了
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" title="開始日のコントロール" class="md-nav__link">
+    開始日のコントロール
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_4" title="開始日のコントロール2" class="md-nav__link">
+    開始日のコントロール2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" title="ソート" class="md-nav__link">
+    ソート
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" title="タスクを思い通りの順番に並べたい" class="md-nav__link">
+    タスクを思い通りの順番に並べたい
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" title="(参考) 昇順" class="md-nav__link">
+    (参考) 昇順
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" title="発展的な操作" class="md-nav__link">
+    発展的な操作
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" title="属性" class="md-nav__link">
+    属性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" title="ルーチンタスク(定期タスク)" class="md-nav__link">
+    ルーチンタスク(定期タスク)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" title="ルーチンタスク応用" class="md-nav__link">
+    ルーチンタスク応用
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" title="ホールド(開始日の固定)" class="md-nav__link">
+    ホールド(開始日の固定)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" title="区切りタスクの意味を理解する" class="md-nav__link">
+    区切りタスクの意味を理解する
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" title="複数タスクをまとめて操作" class="md-nav__link">
+    複数タスクをまとめて操作
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" title="データのエクスポート/インポート" class="md-nav__link">
+    データのエクスポート/インポート
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_22" title="おわりに" class="md-nav__link">
+    おわりに
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目次</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="想定読者" class="md-nav__link">
+    想定読者
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" title="(1) タスク管理に取り組んでいる方" class="md-nav__link">
+    (1) タスク管理に取り組んでいる方
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" title="(2) 秀丸エディタを利用している方" class="md-nav__link">
+    (2) 秀丸エディタを利用している方
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-python" title="(3) Python をインストールできる方" class="md-nav__link">
+    (3) Python をインストールできる方
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tritask_1" title="Tritask について" class="md-nav__link">
+    Tritask について
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tritask_2" title="Tritask とは" class="md-nav__link">
+    Tritask とは
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="タスクの開始と終了" class="md-nav__link">
+    タスクの開始と終了
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tritask_3" title="Tritask で出来ること" class="md-nav__link">
+    Tritask で出来ること
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tritask_4" title="Tritask で（工夫すれば）出来なくもないこと" class="md-nav__link">
+    Tritask で（工夫すれば）出来なくもないこと
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tritask_5" title="Tritask で出来ないこと" class="md-nav__link">
+    Tritask で出来ないこと
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="セットアップ" class="md-nav__link">
+    セットアップ
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" title="1. 必要なプログラムと設定" class="md-nav__link">
+    1. 必要なプログラムと設定
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" title="2. データファイルを準備" class="md-nav__link">
+    2. データファイルを準備
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" title="3. データファイルに区切りを入れる" class="md-nav__link">
+    3. データファイルに区切りを入れる
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" title="4. タスクを登録してみる" class="md-nav__link">
+    4. タスクを登録してみる
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="操作イメージ" class="md-nav__link">
+    操作イメージ
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" title="1. 管理画面を開く" class="md-nav__link">
+    1. 管理画面を開く
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" title="2. 操作する" class="md-nav__link">
+    2. 操作する
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="私の例" class="md-nav__link">
+    私の例
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" title="ワークフロー" class="md-nav__link">
+    ワークフロー
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_3" title="1. タスクを洗い出す" class="md-nav__link">
+    1. タスクを洗い出す
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_3" title="2. タスクを並べ替える" class="md-nav__link">
+    2. タスクを並べ替える
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" title="3. 今日やるものとそれ以外を決める" class="md-nav__link">
+    3. 今日やるものとそれ以外を決める
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" title="4. 今日やるタスクを消化する" class="md-nav__link">
+    4. 今日やるタスクを消化する
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" title="5. 明日になったら？" class="md-nav__link">
+    5. 明日になったら？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" title="6. インボックスやメモを書きたいのですが？" class="md-nav__link">
+    6. インボックスやメモを書きたいのですが？
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" title="基本操作" class="md-nav__link">
+    基本操作
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" title="タスクの追加/削除/更新/複製" class="md-nav__link">
+    タスクの追加/削除/更新/複製
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" title="タスクの開始と終了" class="md-nav__link">
+    タスクの開始と終了
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" title="開始日のコントロール" class="md-nav__link">
+    開始日のコントロール
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_4" title="開始日のコントロール2" class="md-nav__link">
+    開始日のコントロール2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" title="ソート" class="md-nav__link">
+    ソート
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" title="タスクを思い通りの順番に並べたい" class="md-nav__link">
+    タスクを思い通りの順番に並べたい
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" title="(参考) 昇順" class="md-nav__link">
+    (参考) 昇順
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" title="発展的な操作" class="md-nav__link">
+    発展的な操作
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" title="属性" class="md-nav__link">
+    属性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" title="ルーチンタスク(定期タスク)" class="md-nav__link">
+    ルーチンタスク(定期タスク)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" title="ルーチンタスク応用" class="md-nav__link">
+    ルーチンタスク応用
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" title="ホールド(開始日の固定)" class="md-nav__link">
+    ホールド(開始日の固定)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" title="区切りタスクの意味を理解する" class="md-nav__link">
+    区切りタスクの意味を理解する
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" title="複数タスクをまとめて操作" class="md-nav__link">
+    複数タスクをまとめて操作
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" title="データのエクスポート/インポート" class="md-nav__link">
+    データのエクスポート/インポート
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_22" title="おわりに" class="md-nav__link">
+    おわりに
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="tritask">Tritask スタートアップガイド<a class="headerlink" href="#tritask" title="Permanent link">&para;</a></h1>
+<p>タスク管理ツール Tritask について、導入から基本操作まで解説します。</p>
+<p>全部読むのもよし、拾い読みしてイメージを掴んでいただくもよし、何かしらの参考になれば幸いです。</p>
+<h2 id="_1">想定読者<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="1">(1) タスク管理に取り組んでいる方<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<p>既に <strong>タスク管理に取り組んでいる方</strong> を対象とします。</p>
+<p>タスク管理について全く知らない方には厳しいかもしれません。が、もしかしたら読めるかもしれません。読んでみて判断していただければと思います。</p>
+<p>ちなみに、TaskChute を知っている方は理解しやすいと思います。Tritask は TaskChute を元にしてつくったツールです。</p>
+<h3 id="2">(2) 秀丸エディタを利用している方<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<p>Tritask は秀丸エディタ上で動作するツールですので、秀丸エディタを利用している方が対象となります。</p>
+<p>秀丸エディタを使っていない方でも使えないことはないですが、秀丸エディタは有償のテキストエディタであり、またマクロ登録といった作業はやや煩雑で、知らない場合は苦戦が予想されます。今のところ本ページでも詳しい解説は致しません。</p>
+<h3 id="3-python">(3) Python をインストールできる方<a class="headerlink" href="#3-python" title="Permanent link">&para;</a></h3>
+<p>Tritask はプログラミング言語 Python で記述されていますので、実行には Python 環境が必要となります。</p>
+<p>そのため、Python を既に利用しているか、あるいはインストールを行える程度のスキルが必要となります。本ページでは Python のインストールについて詳細な解説は致しません。</p>
+<h2 id="tritask_1">Tritask について<a class="headerlink" href="#tritask_1" title="Permanent link">&para;</a></h2>
+<p>まずはじめに、Tritask のコンセプトについて簡単に説明しておきます。</p>
+<p>詳細は <a href="../concept/index.html">こちら</a> もご覧ください。</p>
+<h3 id="tritask_2">Tritask とは<a class="headerlink" href="#tritask_2" title="Permanent link">&para;</a></h3>
+<p>タスク管理メソッドおよびツールの一種です。</p>
+<p>TaskChute に強く影響されています。TaskChute から「見積もり機能」と「Excel依存」を省いたものと考えれば大体合ってます。</p>
+<p>Tritask では <strong>一行に一つのタスクを書き、これを並べる</strong> ことでタスクリストを実現します。並び順は「今日やるタスク」「明日以降やるタスク」「昨日以前にやったタスク」の三種類に分かれます(Triは3を意味します)。 <strong>ソート操作を実行するだけで並ぶので、ユーザーが手作業で並び替える手間はありません</strong>。</p>
+<p>ユーザーがやることは、</p>
+<ul>
+<li>(1) タスクを Tritask に洗い出していく</li>
+<li>(2) 洗い出したタスクに開始日を設定していく</li>
+<li>(3) ソートする</li>
+</ul>
+<p>これだけです。これだけで「今日やるタスク」と「明日以降やるタスク」に分かれます。ユーザーは「今日やるタスク」に集中するだけです。また、「今日やるタスク」内のタスクを意図した順番に並び替えることも可能ですので、TaskChute みたく直列タスクリスト（上から順番に実行するリスト）もできます。</p>
+<p>もう一つ、Tritask の特徴として <strong>テキストエディタ上で操作する</strong> ことが挙げられます。画面やダイアログを経由せず、キーボードだけで素早く操作できるのが特徴です。データもただのテキストファイルですので管理が容易です。</p>
+<h3 id="_2">タスクの開始と終了<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>タスクの開始/終了状態の管理についても取り上げておきましょう。まず既存ツールでは、</p>
+<ul>
+<li>TODO リスト → チェックを付ける</li>
+<li>TaskChute → 開始時刻と終了時刻を記入する</li>
+</ul>
+<p>となっていますが、Tritask では TaskChute のやり方を踏襲しています。<strong>開始時刻と終了時刻を記入する</strong> スタイルです。</p>
+<p>ここで「え？時刻をいちいち手で打つの？」と思われるかもしれませんが、ご安心ください。Tritask の機能として「タスクを開始する」「タスクを終了する」操作を用意しています。ワンタッチで開始/終了できます。</p>
+<h3 id="tritask_3">Tritask で出来ること<a class="headerlink" href="#tritask_3" title="Permanent link">&para;</a></h3>
+<p>基本的な概念はサポートしています。</p>
+<ul>
+<li>デイリータスクリスト</li>
+<li>インボックス</li>
+<li>ルーチンタスク(定期タスク)</li>
+<li>ログ(過去実行したタスクの記録)</li>
+<li>データのインポート/エクスポート</li>
+</ul>
+<h3 id="tritask_4">Tritask で（工夫すれば）出来なくもないこと<a class="headerlink" href="#tritask_4" title="Permanent link">&para;</a></h3>
+<p>高度なタスク管理ツールが持つ概念も、工夫すれば実現できないことはないです。</p>
+<ul>
+<li>サブタスク</li>
+<li>ラベルやタグの付与</li>
+<li>プロジェクトやコンテキストの付与</li>
+</ul>
+<h3 id="tritask_5">Tritask で出来ないこと<a class="headerlink" href="#tritask_5" title="Permanent link">&para;</a></h3>
+<p>以下はサポートしていません。</p>
+<ul>
+<li>見積もり管理</li>
+<li>スマホ利用</li>
+<li>フィルタリング(特定の属性を持つタスクだけを表示する、一括操作する等)</li>
+<li>スター</li>
+<li>添付ファイル</li>
+</ul>
+<h2 id="_3">セットアップ<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>Tritask のセットアップ手順についてまとめておきます。</p>
+<h3 id="1_1">1. 必要なプログラムと設定<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h3>
+<p>以下の手順が必要です。</p>
+<ul>
+<li>秀丸エディタのインストール</li>
+<li>Python のインストール</li>
+<li>秀丸エディタに Tritask マクロを組み込む</li>
+<li>秀丸エディタに Tritask 用の設定（便利に使うためのショートカット等）を行う</li>
+</ul>
+<p>詳しくは <a href="https://github.com/tritask/tritask-sta">ドキュメント</a> を見てください。細かい解説は割愛します。逆を言うと、秀丸エディタや Python を知っている人が前提のツールということになります（ここは課題ですね。もっと初学者に優しい手段で実現したいところです）。</p>
+<h3 id="2_1">2. データファイルを準備<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h3>
+<p>拡張子 .trita のテキストファイルなら何でも OK です。</p>
+<h3 id="3">3. データファイルに区切りを入れる<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<p>trita ファイルを見やすくするために、区切りはぜひ書いておくことをオススメします。</p>
+<p>区切りは以下の5つがあると便利です。</p>
+<p>※今日 = 2018/07/31 とします</p>
+<pre><code>
+                              ---- INBOX
+
+    &lt;ここにインボックスを書く&gt;
+
+1 2018/07/31 Tue 00:00 00:00  ---- TODAY DONE hold:0
+
+    &lt;ここに今日終了したタスクが並ぶ&gt;
+
+2 2018/07/31 Tue              ---- TODAY TODO hold:0
+
+    &lt;ここにデイリータスクリストを書く＆消化していく&gt;
+
+3 2018/08/01 Wed              ---- TOMORROW TODO hold:1
+
+    &lt;ここに明日以降のタスクが並ぶ&gt;
+
+4 2017/07/01 Sat 00:00 00:00  ---- YESTERDAY DONE
+
+    &lt;ここに昨日以前のタスクが並ぶ&gt;
+</code></pre>
+
+<p>各区切りの意味(hold、ハイフン、時刻 00:00 の意味など)については後述しますが、一言で言うなら「区切りとして機能させるための記述」です。</p>
+<h3 id="4">4. タスクを登録してみる<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
+<p>準備ができたらタスクを登録してみましょう。</p>
+<p>Add Task から追加していきます。どの行に追加しても構いません（どうせ後でソートするので）。今日やるタスクは開始日を今日にして、明日やるタスクは開始日を明日以降に設定しましょう。開始日の変更は Walk Day を使うと楽です(3を入力して3日後を設定、とかできます)。</p>
+<p>追加し終えたらソートを行います。メニュー項目でいうと Sort です。すると、上記区切りの通りに並んでくれるはずです。</p>
+<p>Tritask では <strong>何か操作する → ソートする</strong> という手順を繰り返します。</p>
+<h2 id="_4">操作イメージ<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>Tritask でどのようにタスクを管理していくのか、操作イメージを簡単に説明します。</p>
+<h3 id="1_2">1. 管理画面を開く<a class="headerlink" href="#1_2" title="Permanent link">&para;</a></h3>
+<p>trita ファイルをテキストエディタで開くだけです。</p>
+<h3 id="2_2">2. 操作する<a class="headerlink" href="#2_2" title="Permanent link">&para;</a></h3>
+<p>テキストエディタ上でガシガシ編集するだけです。</p>
+<p>基本的にはカーソルキーで縦横無尽に移動しつつ、タスク名を直接編集するという形になるでしょう。ただしタスクの操作は Tritask メニューから行うと楽です。メニューはショートカットキーで呼び出します。</p>
+<p><img alt="tritask_menu" src="../tritask_menu.jpg" /></p>
+<h3 id="_5">私の例<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>私は Alt + A でメニューを呼び出すようにしています。主要な操作は以下のように呼び出します。</p>
+<table>
+<thead>
+<tr>
+<th>操作</th>
+<th>ショートカット</th>
+<th>意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>タスクを追加</td>
+<td>Alt + A → A</td>
+<td>Add</td>
+</tr>
+<tr>
+<td>タスクを複製</td>
+<td>Alt + A → C</td>
+<td>Copy</td>
+</tr>
+<tr>
+<td>タスクを開始</td>
+<td>Alt + A → S</td>
+<td>Start</td>
+</tr>
+<tr>
+<td>開始したタスクを終了</td>
+<td>Alt + A → E</td>
+<td>End</td>
+</tr>
+<tr>
+<td>タスクの実行日時を変更</td>
+<td>Alt + A → D</td>
+<td>Date</td>
+</tr>
+<tr>
+<td>開始中のタスクにジャンプ</td>
+<td>Alt + A → J</td>
+<td>Jump</td>
+</tr>
+<tr>
+<td>ソート</td>
+<td>Alt + A → Space</td>
+<td>深い意味はありません。単に押しやすいから採用しました。</td>
+</tr>
+</tbody>
+</table>
+<p>ほとんど左手のみで操作できるようになっています。</p>
+<h2 id="_6">ワークフロー<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p>ここでは Tritask を用いた、典型的なタスク管理のワークフロー（運用の流れ）について述べていきます。</p>
+<p>※ここでは今日 = 2018/08/01 水曜日 だとします。</p>
+<h3 id="1_3">1. タスクを洗い出す<a class="headerlink" href="#1_3" title="Permanent link">&para;</a></h3>
+<p>まずはタスクを洗い出します。</p>
+<p>trita ファイルをテキストエディタで開き、Add Task でガシガシ追加していきましょう。</p>
+<p>類似タスクを追加したい場合、Copy Task を使うと簡単に複製できます。プロジェクトやサブタスクをつくりたい場合も、この Copy が使えます。</p>
+<p>以下「電子書籍を執筆する」という想定で例を示していきます。</p>
+<pre><code>    ↓ Add Task で空のタスクをつくる
+
+  2018/08/01 Wed             
+
+    ↓ 分類名を先頭に書く
+
+  2018/08/01 Wed             電子書籍執筆 
+
+    ↓ Copy Task で複製していく
+
+  2018/08/01 Wed             電子書籍執筆 
+  2018/08/01 Wed             電子書籍執筆 
+  2018/08/01 Wed             電子書籍執筆 
+  2018/08/01 Wed             電子書籍執筆 
+  2018/08/01 Wed             電子書籍執筆 
+  2018/08/01 Wed             電子書籍執筆 
+  2018/08/01 Wed             電子書籍執筆 
+  2018/08/01 Wed             電子書籍執筆 
+
+    ↓ タスクを洗い出していく
+
+  2018/08/01 Wed             電子書籍執筆 ニーズ調査
+  2018/08/01 Wed             電子書籍執筆 既存書籍調査
+  2018/08/01 Wed             電子書籍執筆 タイトル考える
+  2018/08/01 Wed             電子書籍執筆 章立て設計する
+  2018/08/01 Wed             電子書籍執筆 面白そうか仲間に訊いてみる
+  2018/08/01 Wed             電子書籍執筆 期限決める
+  2018/08/01 Wed             電子書籍執筆 試しに書いてみる
+  2018/08/01 Wed             電子書籍執筆 出版方法調べる
+</code></pre>
+
+<p>ただし、これだとソートしたら順番があべこべになってしまいます。見づらいです。工夫して文字を付与して、実行順序に並べてみましょう。</p>
+<h3 id="2_3">2. タスクを並べ替える<a class="headerlink" href="#2_3" title="Permanent link">&para;</a></h3>
+<p>順番があべこべで見づらいタスクリストを、見やすく並ぶようにします。</p>
+<pre><code>    ↓  ソートすると以下順番になる（あべこべで見づらい）
+
+2 2018/08/01 Wed             電子書籍執筆 タイトル考える
+2 2018/08/01 Wed             電子書籍執筆 ニーズ調査
+2 2018/08/01 Wed             電子書籍執筆 出版方法調べる
+2 2018/08/01 Wed             電子書籍執筆 既存書籍調査
+2 2018/08/01 Wed             電子書籍執筆 期限決める
+2 2018/08/01 Wed             電子書籍執筆 章立て設計する
+2 2018/08/01 Wed             電子書籍執筆 試しに書いてみる
+2 2018/08/01 Wed             電子書籍執筆 面白そうか仲間に訊いてみる
+
+    ↓ 並び順をコントロールするために、特定の文字を付与させます。
+    ↓
+    ↓ たとえば aN で指定する。a1, a2, a3, ...
+
+2 2018/08/01 Wed             電子書籍執筆 a2 タイトル考える
+2 2018/08/01 Wed             電子書籍執筆 a1 ニーズ調査
+2 2018/08/01 Wed             電子書籍執筆 a2 出版方法調べる
+2 2018/08/01 Wed             電子書籍執筆 a1 既存書籍調査
+2 2018/08/01 Wed             電子書籍執筆 a2 期限決める
+2 2018/08/01 Wed             電子書籍執筆 a4 章立て設計する
+2 2018/08/01 Wed             電子書籍執筆 a3 試しに書いてみる
+2 2018/08/01 Wed             電子書籍執筆 a1 面白そうか仲間に訊いてみる
+
+   ↓ 再度ソートする
+
+2 2018/08/01 Wed             電子書籍執筆 a1 ニーズ調査
+2 2018/08/01 Wed             電子書籍執筆 a1 既存書籍調査
+2 2018/08/01 Wed             電子書籍執筆 a1 面白そうか仲間に訊いてみる
+2 2018/08/01 Wed             電子書籍執筆 a2 タイトル考える
+2 2018/08/01 Wed             電子書籍執筆 a2 出版方法調べる
+2 2018/08/01 Wed             電子書籍執筆 a2 期限決める
+2 2018/08/01 Wed             電子書籍執筆 a3 試しに書いてみる
+2 2018/08/01 Wed             電子書籍執筆 a4 章立て設計する
+</code></pre>
+
+<p>だいぶ見やすくなりました。上から順番に消化すればいいのです。</p>
+<h3 id="3_1">3. 今日やるものとそれ以外を決める<a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h3>
+<p>ですが、今日だけで全てのタスクを消化するのは無理なので、今日やるものとそうでないものを分けましょう。</p>
+<pre><code>2 2018/08/01 Wed             電子書籍執筆 a1 ニーズ調査
+2 2018/08/01 Wed             電子書籍執筆 a1 既存書籍調査
+2 2018/08/01 Wed             電子書籍執筆 a1 面白そうか仲間に訊いてみる
+2 2018/08/01 Wed             電子書籍執筆 a2 タイトル考える
+2 2018/08/01 Wed             電子書籍執筆 a2 出版方法調べる
+2 2018/08/01 Wed             電子書籍執筆 a2 期限決める
+2 2018/08/01 Wed             電子書籍執筆 a3 試しに書いてみる
+2 2018/08/01 Wed             電子書籍執筆 a4 章立て設計する
+
+    ↓ ここでは a1 だけ今日やることにします。
+    ↓ a2 は明日、a3 以降は来週に回しましょう。
+    ↓
+    ↓ 日付操作は Walk Day を使うと楽です。
+    ↓ たとえば 1 日後にしたいなら +1 を指定するだけで済みます。
+
+2 2018/08/01 Wed             電子書籍執筆 a1 ニーズ調査
+2 2018/08/01 Wed             電子書籍執筆 a1 既存書籍調査
+2 2018/08/01 Wed             電子書籍執筆 a1 面白そうか仲間に訊いてみる
+2 2018/08/02 Thu             電子書籍執筆 a2 タイトル考える
+2 2018/08/02 Thu             電子書籍執筆 a2 出版方法調べる
+2 2018/08/02 Thu             電子書籍執筆 a2 期限決める
+2 2018/08/06 Mon             電子書籍執筆 a3 試しに書いてみる
+2 2018/08/06 Mon             電子書籍執筆 a4 章立て設計する
+</code></pre>
+
+<p>これで今日やるものとそれ以外に分かれました。区切りがないので見づらいですが、区切りも入れると以下のようになります。</p>
+<pre><code>2 2018/08/01 Wed              ---- TODAY TODO hold:0
+2 2018/08/01 Wed             電子書籍執筆 a1 ニーズ調査
+2 2018/08/01 Wed             電子書籍執筆 a1 既存書籍調査
+2 2018/08/01 Wed             電子書籍執筆 a1 面白そうか仲間に訊いてみる
+3 2018/08/02 Thu              ---- TOMORROW TODO hold:1
+3 2018/08/02 Thu             電子書籍執筆 a2 タイトル考える
+3 2018/08/02 Thu             電子書籍執筆 a2 出版方法調べる
+3 2018/08/02 Thu             電子書籍執筆 a2 期限決める
+3 2018/08/06 Mon             電子書籍執筆 a3 試しに書いてみる
+3 2018/08/06 Mon             電子書籍執筆 a4 章立て設計する
+</code></pre>
+
+<p>だいぶ見やすくなりました。</p>
+<p>※区切りの意味(hold や ---- など)について後述します。今はとりあえずそういう書き方をする、とだけ思っていただければ OK です。</p>
+<h3 id="4_1">4. 今日やるタスクを消化する<a class="headerlink" href="#4_1" title="Permanent link">&para;</a></h3>
+<p>では、今日やるタスクが定まったところで、上から消化していきましょう。</p>
+<pre><code>2 2018/08/01 Wed              ---- TODAY TODO hold:0
+2 2018/08/01 Wed             電子書籍執筆 a1 ニーズ調査
+2 2018/08/01 Wed             電子書籍執筆 a1 既存書籍調査
+2 2018/08/01 Wed             電子書籍執筆 a1 面白そうか仲間に訊いてみる
+3 2018/08/02 Thu              ---- TOMORROW TODO hold:1
+3 2018/08/02 Thu             電子書籍執筆 a2 タイトル考える
+3 2018/08/02 Thu             電子書籍執筆 a2 出版方法調べる
+3 2018/08/02 Thu             電子書籍執筆 a2 期限決める
+3 2018/08/06 Mon             電子書籍執筆 a3 試しに書いてみる
+3 2018/08/06 Mon             電子書籍執筆 a4 章立て設計する
+
+    ↓ ニーズ調査を開始する(13:18 に開始した場合)
+    ↓ Start Task で一発です
+
+2 2018/08/01 Wed              ---- TODAY TODO hold:0
+2 2018/08/01 Wed 13:18       電子書籍執筆 a1 ニーズ調査
+2 2018/08/01 Wed             電子書籍執筆 a1 既存書籍調査
+2 2018/08/01 Wed             電子書籍執筆 a1 面白そうか仲間に訊いてみる
+3 2018/08/02 Thu              ---- TOMORROW TODO hold:1
+3 2018/08/02 Thu             電子書籍執筆 a2 タイトル考える
+3 2018/08/02 Thu             電子書籍執筆 a2 出版方法調べる
+3 2018/08/02 Thu             電子書籍執筆 a2 期限決める
+3 2018/08/06 Mon             電子書籍執筆 a3 試しに書いてみる
+3 2018/08/06 Mon             電子書籍執筆 a4 章立て設計する
+
+   ↓ ニーズ調査を終了する(14:22 に終わった場合)
+   ↓ End Task で一発です
+
+2 2018/08/01 Wed              ---- TODAY TODO hold:0
+2 2018/08/01 Wed 13:18 14:22 電子書籍執筆 a1 ニーズ調査
+2 2018/08/01 Wed             電子書籍執筆 a1 既存書籍調査
+2 2018/08/01 Wed             電子書籍執筆 a1 面白そうか仲間に訊いてみる
+3 2018/08/02 Thu              ---- TOMORROW TODO hold:1
+3 2018/08/02 Thu             電子書籍執筆 a2 タイトル考える
+3 2018/08/02 Thu             電子書籍執筆 a2 出版方法調べる
+3 2018/08/02 Thu             電子書籍執筆 a2 期限決める
+3 2018/08/06 Mon             電子書籍執筆 a3 試しに書いてみる
+3 2018/08/06 Mon             電子書籍執筆 a4 章立て設計する
+
+   ↓ ソートする
+
+2 2018/08/01 Wed 13:18 14:22 電子書籍執筆 a1 ニーズ調査
+2 2018/08/01 Wed              ---- TODAY TODO hold:0
+2 2018/08/01 Wed             電子書籍執筆 a1 既存書籍調査
+2 2018/08/01 Wed             電子書籍執筆 a1 面白そうか仲間に訊いてみる
+3 2018/08/02 Thu              ---- TOMORROW TODO hold:1
+3 2018/08/02 Thu             電子書籍執筆 a2 タイトル考える
+3 2018/08/02 Thu             電子書籍執筆 a2 出版方法調べる
+3 2018/08/02 Thu             電子書籍執筆 a2 期限決める
+3 2018/08/06 Mon             電子書籍執筆 a3 試しに書いてみる
+3 2018/08/06 Mon             電子書籍執筆 a4 章立て設計する
+</code></pre>
+
+<p>消化したタスクは、残っているタスクよりも上に表示されていることがわかります。「今日はあと2つのタスクが残っている」ことが見てわかると思います。</p>
+<p>このようにして今日のタスクを全部潰していきます。</p>
+<p>おまけとして「今日やったタスク」の区切りを入れておきましょう。</p>
+<pre><code>1 2018/08/01 Wed 00:00 00:00  ---- TODAY DONE hold:0 ★ここを追加しました
+2 2018/08/01 Wed 13:18 14:22 電子書籍執筆 a1 ニーズ調査
+2 2018/08/01 Wed              ---- TODAY TODO hold:0
+2 2018/08/01 Wed             電子書籍執筆 a1 既存書籍調査
+2 2018/08/01 Wed             電子書籍執筆 a1 面白そうか仲間に訊いてみる
+3 2018/08/02 Thu              ---- TOMORROW TODO hold:1
+3 2018/08/02 Thu             電子書籍執筆 a2 タイトル考える
+3 2018/08/02 Thu             電子書籍執筆 a2 出版方法調べる
+3 2018/08/02 Thu             電子書籍執筆 a2 期限決める
+3 2018/08/06 Mon             電子書籍執筆 a3 試しに書いてみる
+3 2018/08/06 Mon             電子書籍執筆 a4 章立て設計する
+</code></pre>
+
+<p>さらに見やすくなりました。</p>
+<h3 id="5">5. 明日になったら？<a class="headerlink" href="#5" title="Permanent link">&para;</a></h3>
+<p>明日、つまりは 2018/08/02 を迎えると、タスクの並び順はどうなるでしょうか。</p>
+<p>Tritask では「今日 = 2018/08/02」だと自動で認識します（余談ですが TaskChute だとここは自分で切り替える必要がありますよね。基準日という名前でしたね）。なので、ソートすると以下のようになります（a1のタスクは全部終了させたものとします）。</p>
+<pre><code>1 2018/08/02 Thu 00:00 00:00  ---- TODAY DONE hold:0
+2 2018/08/02 Thu              ---- TODAY TODO hold:0
+2 2018/08/02 Thu             電子書籍執筆 a2 タイトル考える
+2 2018/08/02 Thu             電子書籍執筆 a2 出版方法調べる
+2 2018/08/02 Thu             電子書籍執筆 a2 期限決める
+3 2018/08/03 Fri              ---- TOMORROW TODO hold:1
+3 2018/08/06 Mon             電子書籍執筆 a3 試しに書いてみる
+3 2018/08/06 Mon             電子書籍執筆 a4 章立て設計する
+4 2018/08/01 Wed 13:18 14:22 電子書籍執筆 a1 ニーズ調査
+4 2018/08/01 Wed 14:33 15:44 電子書籍執筆 a1 既存書籍調査
+4 2018/08/01 Wed 16:00 17:00 電子書籍執筆 a1 面白そうか仲間に訊いてみる
+</code></pre>
+
+<p>注目したいのは二点。</p>
+<p>一点目。2018/08/02 のタスクだった a2 のタスクたちが、今日のタスクとして表れました。</p>
+<p>二点目。昨日 2018/08/01 のタスクは、明日以降のタスクよりも下に表示されています。過去のタスクは用済みなので、下部にまとめておいておくというアイデアです。</p>
+<p>少し見づらいので、やはり区切りを追加して見やすくしておきましょうか。以下のようになります。</p>
+<pre><code>1 2018/08/02 Thu 00:00 00:00  ---- TODAY DONE hold:0
+2 2018/08/02 Thu              ---- TODAY TODO hold:0
+2 2018/08/02 Thu             電子書籍執筆 a2 タイトル考える
+2 2018/08/02 Thu             電子書籍執筆 a2 出版方法調べる
+2 2018/08/02 Thu             電子書籍執筆 a2 期限決める
+3 2018/08/03 Fri              ---- TOMORROW TODO hold:1
+3 2018/08/06 Mon             電子書籍執筆 a3 試しに書いてみる
+3 2018/08/06 Mon             電子書籍執筆 a4 章立て設計する
+4 2017/07/01 Sat 00:00 00:00  ---- YESTERDAY DONE ★ これを追加しました
+4 2018/08/01 Wed 13:18 14:22 電子書籍執筆 a1 ニーズ調査
+4 2018/08/01 Wed 14:33 15:44 電子書籍執筆 a1 既存書籍調査
+4 2018/08/01 Wed 16:00 17:00 電子書籍執筆 a1 面白そうか仲間に訊いてみる
+</code></pre>
+
+<p>「明日以降のタスク」と「昨日以前にやったタスク」の境界がわかりやすくなったかと思います。</p>
+<h3 id="6">6. インボックスやメモを書きたいのですが？<a class="headerlink" href="#6" title="Permanent link">&para;</a></h3>
+<p>最後にインボックスについても紹介しておきましょう。</p>
+<p>Tritask では開始日の無いタスクがインボックスになります。一番上に表示されるのが特徴です。名前こそインボックスですが、メモ欄として使っても問題ありません。使い方は自由です。</p>
+<p>インボックスの追加は Add Inbox にて行います。</p>
+<pre><code>    ↓ 三件ほど追加してみる
+
+1 2018/08/02 Thu 00:00 00:00  ---- TODAY DONE hold:0
+2 2018/08/02 Thu              ---- TODAY TODO hold:0
+2 2018/08/02 Thu             電子書籍執筆 a2 タイトル考える
+2 2018/08/02 Thu             電子書籍執筆 a2 出版方法調べる
+2 2018/08/02 Thu             電子書籍執筆 a2 期限決める
+3 2018/08/03 Fri              ---- TOMORROW TODO hold:1
+                             インボックス
+                             インボックス
+                             インボックス
+3 2018/08/06 Mon             電子書籍執筆 a3 試しに書いてみる
+3 2018/08/06 Mon             電子書籍執筆 a4 章立て設計する
+4 2017/07/01 Sat 00:00 00:00  ---- YESTERDAY DONE ★ これを追加しました
+4 2018/08/01 Wed 13:18 14:22 電子書籍執筆 a1 ニーズ調査
+4 2018/08/01 Wed 14:33 15:44 電子書籍執筆 a1 既存書籍調査
+4 2018/08/01 Wed 16:00 17:00 電子書籍執筆 a1 面白そうか仲間に訊いてみる
+
+    ↓ ソートする
+
+                             インボックス
+                             インボックス
+                             インボックス
+1 2018/08/02 Thu 00:00 00:00  ---- TODAY DONE hold:0
+2 2018/08/02 Thu              ---- TODAY TODO hold:0
+2 2018/08/02 Thu             電子書籍執筆 a2 タイトル考える
+2 2018/08/02 Thu             電子書籍執筆 a2 出版方法調べる
+2 2018/08/02 Thu             電子書籍執筆 a2 期限決める
+3 2018/08/03 Fri              ---- TOMORROW TODO hold:1
+3 2018/08/06 Mon             電子書籍執筆 a3 試しに書いてみる
+3 2018/08/06 Mon             電子書籍執筆 a4 章立て設計する
+4 2017/07/01 Sat 00:00 00:00  ---- YESTERDAY DONE ★ これを追加しました
+4 2018/08/01 Wed 13:18 14:22 電子書籍執筆 a1 ニーズ調査
+4 2018/08/01 Wed 14:33 15:44 電子書籍執筆 a1 既存書籍調査
+4 2018/08/01 Wed 16:00 17:00 電子書籍執筆 a1 面白そうか仲間に訊いてみる
+</code></pre>
+
+<p>インボックスが一番上に表示されていることがわかります。</p>
+<h2 id="_7">基本操作<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<p>Tritask がサポートする操作のうち、基本的なものを紹介します。</p>
+<h3 id="_8">タスクの追加/削除/更新/複製<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p>一行一タスクなので、以下のように手作業でも操作できます。</p>
+<ul>
+<li>追加 = 追加したい箇所に Enter で空行を追加する</li>
+<li>更新 = 編集したい行を直接いじる</li>
+<li>削除 = 消したい行を Backspace や Delete で消す</li>
+<li>複製 = 複製したい行をコピペする</li>
+</ul>
+<p>しかし手作業だと手間です。特にタスク追加時は、実行日を書かないといけなくて大変です。追加と複製については Tritask メニューから行うのが楽です。</p>
+<ul>
+<li>追加 → Add Task</li>
+<li>複製 → Copy Task</li>
+</ul>
+<p>メニューからだと実行日や開始時刻といったあたりも自動で入力/クリアしてくれます。</p>
+<h3 id="_9">タスクの開始と終了<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p>Tritask においては、</p>
+<ul>
+<li><strong>タスクを開始する = 開始時刻を記入する</strong> こと</li>
+<li><strong>タスクを終了する = （開始時刻が記入された状態でさらに）終了時刻を記入する</strong> こと</li>
+</ul>
+<p>です。なので開始/終了したい場合は、単に現在時刻を記入すればいいです。ただ手打ちで時刻を打つのはしんどいので、Tritask メニューから一発で挿入します。Start Task と End Task です。</p>
+<h3 id="_10">開始日のコントロール<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p>タスクの開始日をスムーズに行う操作をサポートしています。</p>
+<ul>
+<li>Walk Day</li>
+</ul>
+<p>選択中のタスクの開始日を、入力した日数だけで進めます or 戻します。3 とか +3 なら3日後、-7 なら一週間前です。</p>
+<ul>
+<li>Change to Today</li>
+</ul>
+<p>選択中のタスクの開始日を今日にします。</p>
+<ul>
+<li>Clear Date</li>
+</ul>
+<p>選択中のタスクの開始日をクリアします（インボックスタスクになります）。</p>
+<h3 id="2_4">開始日のコントロール2<a class="headerlink" href="#2_4" title="Permanent link">&para;</a></h3>
+<p>開始日を直接いじることもできます。その際 <strong>曜日部分はソート時に自動反映される</strong> のでいじらなくて OK です。</p>
+<p>直接いじる際に注意したいのは、日付を不正な値にしないことです。不正だとソート時にエラーとなりエラーログが開かれます。以下に不正な日付の例を挙げます。</p>
+<pre><code>2 2018/07/31 Tue             休憩
+  2018/07/32 Tue             ★このタスクは開始日が不正です
+</code></pre>
+
+<p>7月32日は存在しません。</p>
+<h3 id="_11">ソート<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<p><strong>ソートとは trita ファイル中の各行（つまりタスク一件一件）を昇順で並び替える</strong> ことです。それ以上の意味はありません。</p>
+<p>Tritask では <strong>ソートするだけでタスク全体が意味のある並びになります</strong>。意味の塊は5つあって、</p>
+<ul>
+<li>インボックス(開始日未定のタスク)</li>
+<li>今日やったタスク</li>
+<li>今日やるタスク</li>
+<li>明日以降のタスク</li>
+<li>昨日以前のタスク</li>
+</ul>
+<p>この5つです。表示順も上からこの通りです。</p>
+<h3 id="_12">タスクを思い通りの順番に並べたい<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<p>ここで「タスクを思い通りの順番に並べるにはどうしたら？」という疑問が生じるかと思います。</p>
+<p>可能です。 <strong>ソートの性質(昇順に並ぶ)を理解して、上手いことタスク名を工夫する</strong> ことです。</p>
+<p>たとえば以下四つのタスクがあるとして、以下の順番で並べたいとしましょう。</p>
+<pre><code>  2018/08/01 Wed             タスク 最初にやりたい
+  2018/08/01 Wed             タスク 次にやりたい
+  2018/08/01 Wed             タスク その次にやりたい
+  2018/08/01 Wed             タスク 最後にやりたい
+</code></pre>
+
+<p>これをソートすると、以下のように意図した順番になりません。</p>
+<pre><code>2 2018/08/01 Wed             タスク その次にやりたい
+2 2018/08/01 Wed             タスク 最初にやりたい
+2 2018/08/01 Wed             タスク 最後にやりたい
+2 2018/08/01 Wed             タスク 次にやりたい
+</code></pre>
+
+<p>意図した順番で並びるために、ソートが「昇順で並べる」という性質に考慮して、たとえば以下のようにします。</p>
+<pre><code>2 2018/08/01 Wed             タスク 3 その次にやりたい
+2 2018/08/01 Wed             タスク 1 最初にやりたい
+2 2018/08/01 Wed             タスク 4 最後にやりたい
+2 2018/08/01 Wed             タスク 2 次にやりたい
+</code></pre>
+
+<p>ここでは実行したい順序を数字で書きました。これをソートすると</p>
+<pre><code>2 2018/08/01 Wed             タスク 1 最初にやりたい
+2 2018/08/01 Wed             タスク 2 次にやりたい
+2 2018/08/01 Wed             タスク 3 その次にやりたい
+2 2018/08/01 Wed             タスク 4 最後にやりたい
+</code></pre>
+
+<p>完成です。意図した順番で並んでくれました。</p>
+<p>このようにしてタスクの並び順をコントロールします。最初は難しいかもしれませんが、慣れればサクサクと並び替えられます。</p>
+<h3 id="_13">(参考) 昇順<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<p>各文字を昇順で並べると以下のとおりになります。</p>
+<pre><code> !&quot;#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+</code></pre>
+
+<p>たとえば「A」は「a」よりも先に並ぶ（先に表示される）ことがわかります。</p>
+<h2 id="_14">発展的な操作<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
+<p>ここではタスク管理の諸概念が絡む使い方や、知っておくと便利な操作方法など、基本よりも高度な使い方について見ていきます。</p>
+<h3 id="_15">属性<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<p>Tritask ではタスク名に <code>attrname:value</code> という文字列を書くと、当該 <strong>タスクに属性 attrname を付与する</strong> という意味になります。</p>
+<p>属性として以下があります。</p>
+<ul>
+<li>ルーチンタスクにする</li>
+<li>開始日を常に固定する</li>
+</ul>
+<h3 id="_16">ルーチンタスク(定期タスク)<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<p>ルーチンタスクを実現するには、タスク名に <code>rep:N</code> を記述しておきます。そうすると、当該タスクを終了した時に、 <strong>開始日が +N 日された当該タスク</strong> が複製されます。</p>
+<p>例を見ていきましょう。</p>
+<pre><code>    ↓ 毎日実行するルーチンタスクとしてメールチェックを追加します
+
+  2018/08/01 Wed             昼休憩後のメールチェック rep:1
+
+    ↓ これを終了してみます
+
+  2018/08/01 Wed 13:00 13:04 昼休憩後のメールチェック rep:1
+
+    ↓ この時、タスクが一つ下に複製されます。
+
+  2018/08/01 Wed 13:00 13:04 昼休憩後のメールチェック rep:1
+  2018/08/02 Wed             昼休憩後のメールチェック rep:1
+</code></pre>
+
+<p>あとはソートするだけです。ソートすれば、複製された 8/2 のタスクは「明日以降のタスク」エリアに移ります。</p>
+<h3 id="_17">ルーチンタスク応用<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<p>定期設定はある程度細かく設定できます。</p>
+<p>例1: 一週間毎に繰り返すルーチンタスク。</p>
+<p>N=7 を指定します。</p>
+<pre><code>  2018/08/01 Wed             週一バックアップ rep:7
+</code></pre>
+
+<p>例2: 3日毎に繰り返すタスク。ただし休日はスキップする。</p>
+<p>N=3を指定します。スキップについては <code>skip:●●</code> という属性を使います。<code>●●</code> の部分にはスキップしたい日を指定します。休日をスキップしたいなら <code>休</code> を指定します。</p>
+<pre><code>  2018/08/01 Wed             はてなブックマークでトレンドを読む rep:3 skip:休
+</code></pre>
+
+<p>スキップ設定は他にもいくつかあります。以下に示しておきます。</p>
+<table>
+<thead>
+<tr>
+<th>記述する内容</th>
+<th>意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>skip:月</code></td>
+<td>月曜日はスキップ</td>
+</tr>
+<tr>
+<td><code>skip:火</code></td>
+<td>火曜日はスキップ</td>
+</tr>
+<tr>
+<td><code>skip:水</code></td>
+<td>水曜日はスキップ</td>
+</tr>
+<tr>
+<td><code>skip:木</code></td>
+<td>木曜日はスキップ</td>
+</tr>
+<tr>
+<td><code>skip:金</code></td>
+<td>金曜日はスキップ</td>
+</tr>
+<tr>
+<td><code>skip:土</code></td>
+<td>土曜日はスキップ</td>
+</tr>
+<tr>
+<td><code>skip:日</code></td>
+<td>日曜日はスキップ</td>
+</tr>
+<tr>
+<td><code>skip:平</code></td>
+<td>平日(月-金)はスキップ</td>
+</tr>
+<tr>
+<td><code>skip:休</code></td>
+<td>休日(土日)はスキップ</td>
+</tr>
+</tbody>
+</table>
+<p>複数指定すると「全てを満たす」という意味になります。以下に例を挙げます。</p>
+<pre><code>  2018/08/01 Wed             水曜日と休日をスキップするルーチンタスク rep:1 skip:水日
+</code></pre>
+
+<p>また上記は <code>skip:日水</code> でも構いません。</p>
+<h3 id="_18">ホールド(開始日の固定)<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<p>ホールドとは <strong>開始日を固定する</strong> 属性です。</p>
+<p>Tritask ではそもそも <strong>開始日が今日より前の未終了タスク</strong> があった時、ソートを行うと <strong>開始日を今日にする</strong> という仕様があります。これは「やりもらしたタスク」をスルーしてしまうのを防ぐための機能なのですが、この仕様だと困る点が一つあります。</p>
+<p><strong>区切りを作れない</strong> のです。</p>
+<p>区切りは常に同じ位置に表示させたいものです。</p>
+<ul>
+<li>例1: 「今日やるタスク」の区切りは、今日のエリアの一番上に表示したい</li>
+<li>例2: 「明日以降やるタスク」の区切りは、明日以降のエリアの一番上に表示したい</li>
+</ul>
+<p>じゃあどうすればいいかと考えて、Tritask ではホールドという属性を用意しました。</p>
+<p>タスク名に <code>hold:N</code> と書くと、そのタスクの開始日はソートされた時、<strong>常に「今日 + N 日」</strong> になります。</p>
+<p>以下に例を示します。</p>
+<table>
+<thead>
+<tr>
+<th>記述する内容</th>
+<th>意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>hold:0</code></td>
+<td>このタスクは開始日が常に「今日」になる</td>
+</tr>
+<tr>
+<td><code>hold:1</code></td>
+<td>このタスクは開始日が常に「明日」になる</td>
+</tr>
+<tr>
+<td><code>hold:-1</code></td>
+<td>このタスクは開始日が常に「昨日」になる</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_19">区切りタスクの意味を理解する<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
+<p>以上を踏まえて、ここでは上述した区切りタスクを改めて見てみましょう（ここでは今日 = 2018/07/31 とします）。</p>
+<pre><code>
+                              ---- INBOX
+
+    &lt;ここにインボックスを書く&gt;
+
+1 2018/07/31 Tue 00:00 00:00  ---- TODAY DONE hold:0
+
+    &lt;ここに今日終了したタスクが並ぶ&gt;
+
+2 2018/07/31 Tue              ---- TODAY TODO hold:0
+
+    &lt;ここにデイリータスクリストを書く＆消化していく&gt;
+
+3 2018/08/01 Wed              ---- TOMORROW TODO hold:1
+
+    &lt;ここに明日以降のタスクが並ぶ&gt;
+
+4 2017/07/01 Sat 00:00 00:00  ---- YESTERDAY DONE
+
+    &lt;ここに昨日以前のタスクが並ぶ&gt;
+</code></pre>
+
+<p>今日のタスク(TODAY DONE と TODAY TODO)と明日以降のタスク(TOMORROW TODO) について見ていきます。</p>
+<p>今日のタスクを仕切る区切りでは <code>hold:0</code> を使っています。明日以降のタスクを仕切る区切りでは <code>hold:1</code> を使っています。これは「常に開始日を今日にする」「明日にする」と指定させているわけですね。</p>
+<p>それからもう一つ、タスク名の先頭が <code>----</code>となっているのは、どのタスクよりも最初に表示させたいからです。先頭には実はスペースがあります。 <strong>スペースは昇順ではどの文字よりも最初に表示される文字</strong> です。</p>
+<p>ハイフンを使っているのは、単に見やすくするためです。見やすくするためなら何でもいいです。 <code>--------</code> でもいいですし、 <code>========</code> でもいいでしょう。</p>
+<p>……と、解説していくと長くなってしまいますが、要するに区切りとして機能させるために、</p>
+<ul>
+<li>何とかして書き方を工夫（昇順で並び替わることを考慮）している</li>
+<li>必要ならホールド属性で開始日を固定する</li>
+</ul>
+<p>の二つのアプローチを使っているというわけです。</p>
+<h3 id="_20">複数タスクをまとめて操作<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
+<p>「タスクの開始日時を更新する」操作と「開始日時を今日にする」操作に限り、一度に複数のタスクをまとめて操作することができます。メニューには <Multi> と付いています。</p>
+<h3 id="_21">データのエクスポート/インポート<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
+<p>Tritask ではデータの取り扱いが簡単です。</p>
+<p>.trita ファイルというただのテキストファイルなので、どうとでもできます。メモ帳があれば中身を見ることができますし、Tritask の環境をセットアップすれば、trita ファイルを開いて、どこでもタスク管理を行うことができます。</p>
+<p>（これはエンジニア向けですが）GitHub などのバージョン管理システムに入れて管理することも可能です。</p>
+<h2 id="_22">おわりに<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h2>
+<p>いかがでしたでしょうか。本ページでは Tritask について導入から使い方についてざっと紹介してみました。参考になりましたら幸いです。</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../concept/index.html" title="Tritask のコンセプト" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  前
+                </span>
+                Tritask のコンセプト
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.a59e2a89.js"></script>
+      
+        
+        
+          
+          <script src="../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+                <script src="../assets/javascripts/lunr/tinyseg.js"></script>
+              
+              
+                <script src="../assets/javascripts/lunr/lunr.jp.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"0.17.4",url:{base:".."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
