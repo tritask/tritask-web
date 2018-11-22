@@ -17,4 +17,4 @@
   - 無関係なツイートがヒットするので lang:ja にて日本語圏以外を省いています
 
 ## 作者について
-- [stakiran](https://stakiran.github.io/stakiran/profile.html)
+- [stakiran](https://stakiran.github.io/stakiran/)
