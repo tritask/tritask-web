@@ -296,14 +296,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#tritask_4" title="Tritask で（工夫すれば）出来なくもないこと" class="md-nav__link">
-    Tritask で（工夫すれば）出来なくもないこと
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tritask_5" title="Tritask で出来ないこと" class="md-nav__link">
+  <a href="#tritask_4" title="Tritask で出来ないこと" class="md-nav__link">
     Tritask で出来ないこと
   </a>
   
@@ -670,14 +663,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#tritask_4" title="Tritask で（工夫すれば）出来なくもないこと" class="md-nav__link">
-    Tritask で（工夫すれば）出来なくもないこと
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tritask_5" title="Tritask で出来ないこと" class="md-nav__link">
+  <a href="#tritask_4" title="Tritask で出来ないこと" class="md-nav__link">
     Tritask で出来ないこと
   </a>
   
@@ -968,8 +954,9 @@
                 
                 <h1 id="tritask">Tritask スタートアップガイド<a class="headerlink" href="#tritask" title="Permanent link">&para;</a></h1>
 <p>タスク管理ツール Tritask について、導入から基本操作まで解説します。</p>
-<p>全部読むのもよし、拾い読みしてイメージを掴んでいただくもよし、何かしらの参考になれば幸いです。</p>
 <h2 id="_1">想定読者<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Tritask はツールの性質上、ある程度利用者のスキルを要求します（課題でもあります。今後改善していきたいです）。</p>
+<p>想定読者は以下のとおりです。</p>
 <h3 id="1">(1) タスク管理に取り組んでいる方<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
 <p>既に <strong>タスク管理に取り組んでいる方</strong> を対象とします。</p>
 <p>タスク管理について全く知らない方には厳しいかもしれません。が、もしかしたら読めるかもしれません。読んでみて判断していただければと思います。</p>
@@ -981,11 +968,10 @@
 <p>Tritask はプログラミング言語 Python で記述されていますので、実行には Python 環境が必要となります。</p>
 <p>そのため、Python を既に利用しているか、あるいはインストールを行える程度のスキルが必要となります。本ページでは Python のインストールについて詳細な解説は致しません。</p>
 <h2 id="tritask_1">Tritask について<a class="headerlink" href="#tritask_1" title="Permanent link">&para;</a></h2>
-<p>まずはじめに、Tritask のコンセプトについて簡単に説明しておきます。</p>
-<p>詳細は <a href="concept.html">こちら</a> もご覧ください。</p>
+<p>まずはじめに、Tritask のコンセプトについて簡単に説明しておきます。詳細は <a href="concept.html">Tritask のコンセプト</a> もご覧ください。</p>
 <h3 id="tritask_2">Tritask とは<a class="headerlink" href="#tritask_2" title="Permanent link">&para;</a></h3>
 <p>タスク管理メソッドおよびツールの一種です。</p>
-<p>TaskChute に強く影響されています。TaskChute から「見積もり機能」と「Excel依存」を省いたものと考えれば大体合ってます。</p>
+<p>TaskChute に強く影響されています。TaskChute から「見積もり機能」と「Excel依存」を省き、テキストエディタ上で動かせるよう極限までフォーマットをシンプルにしたものだと考えれば大体合ってます。</p>
 <p>Tritask では <strong>一行に一つのタスクを書き、これを並べる</strong> ことでタスクリストを実現します。並び順は「今日やるタスク」「明日以降やるタスク」「昨日以前にやったタスク」の三種類に分かれます(Triは3を意味します)。 <strong>ソート操作を実行するだけで並ぶので、ユーザーが手作業で並び替える手間はありません</strong>。</p>
 <p>ユーザーがやることは、</p>
 <ul>
@@ -1004,30 +990,40 @@
 <p>となっていますが、Tritask では TaskChute のやり方を踏襲しています。<strong>開始時刻と終了時刻を記入する</strong> スタイルです。</p>
 <p>ここで「え？時刻をいちいち手で打つの？」と思われるかもしれませんが、ご安心ください。Tritask の機能として「タスクを開始する」「タスクを終了する」操作を用意しています。ワンタッチで開始/終了できます。</p>
 <h3 id="tritask_3">Tritask で出来ること<a class="headerlink" href="#tritask_3" title="Permanent link">&para;</a></h3>
-<p>基本的な概念はサポートしています。</p>
 <ul>
-<li>デイリータスクリスト</li>
-<li>インボックス</li>
-<li>ルーチンタスク(定期タスク)</li>
-<li>ログ(過去実行したタスクの記録)</li>
+<li>ショートカットキー一発でタスク操作</li>
+<li>日単位でタスクを区切る(タスクが実行日パラメーターを持つ)<ul>
+<li>例1: デイリータスクリスト</li>
+<li>例2: あるタスクを明日にスキップする</li>
+<li>例3: あるタスクを 2019 年 2 月 13 日に配置する</li>
+</ul>
+</li>
+<li>ルーチンタスク<ul>
+<li>例1: <code>毎日繰り返すタスク rep:1</code></li>
+<li>例2: <code>1週間に1回繰り返すタスク rep:7</code></li>
+<li>例3: <code>3日に1回繰り返すタスク、ただし水曜日と休日は省く rep:3 skip:水休</code></li>
+</ul>
+</li>
+<li>見積りレポート<ul>
+<li>今日のタスクをレポート(タスク数, 合計見積時間, 所要時間)</li>
+<li>選択範囲をレポート(タスク数, 合計見積時間)</li>
+</ul>
+</li>
+<li>ログ(実行済タスクの記録)</li>
 <li>データのインポート/エクスポート</li>
 </ul>
-<h3 id="tritask_4">Tritask で（工夫すれば）出来なくもないこと<a class="headerlink" href="#tritask_4" title="Permanent link">&para;</a></h3>
-<p>高度なタスク管理ツールが持つ概念も、工夫すれば実現できないことはないです。</p>
+<h3 id="tritask_4">Tritask で出来ないこと<a class="headerlink" href="#tritask_4" title="Permanent link">&para;</a></h3>
+<p>リッチな機能はサポートしていません。たとえば以下はサポートしていません。</p>
 <ul>
+<li>スマホ利用</li>
 <li>サブタスク</li>
 <li>ラベルやタグの付与</li>
 <li>プロジェクトやコンテキストの付与</li>
-</ul>
-<h3 id="tritask_5">Tritask で出来ないこと<a class="headerlink" href="#tritask_5" title="Permanent link">&para;</a></h3>
-<p>以下はサポートしていません。</p>
-<ul>
-<li>見積もり管理</li>
-<li>スマホ利用</li>
 <li>フィルタリング(特定の属性を持つタスクだけを表示する、一括操作する等)</li>
 <li>スター</li>
 <li>添付ファイル</li>
 </ul>
+<p>ただし、一部については工夫すれば実現できなくもないです。</p>
 <h2 id="_3">セットアップ<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>Tritask のセットアップ手順についてまとめておきます。</p>
 <h3 id="1_1">1. 必要なプログラムと設定<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h3>
@@ -1658,10 +1654,9 @@
 <p>「タスクの開始日時を更新する」操作と「開始日時を今日にする」操作に限り、一度に複数のタスクをまとめて操作することができます。メニューには <Multi> と付いています。</p>
 <h3 id="_21">データのエクスポート/インポート<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
 <p>Tritask ではデータの取り扱いが簡単です。</p>
-<p>.trita ファイルというただのテキストファイルなので、どうとでもできます。メモ帳があれば中身を見ることができますし、Tritask の環境をセットアップすれば、trita ファイルを開いて、どこでもタスク管理を行うことができます。</p>
-<p>（これはエンジニア向けですが）GitHub などのバージョン管理システムに入れて管理することも可能です。</p>
+<p>.trita ファイルというただのテキストファイルなので、どうにでもできます。テキストエディタがあれば中身を見ることができますし、Tritask の環境をセットアップすれば、trita ファイルを開いて、どこでもタスク管理を行うことができます。また、（これはエンジニア向けですが）GitHub などのバージョン管理システムに入れて管理することも可能です。</p>
 <h2 id="_22">おわりに<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h2>
-<p>いかがでしたでしょうか。本ページでは Tritask について導入から使い方についてざっと紹介してみました。参考になりましたら幸いです。</p>
+<p>本ページでは Tritask について導入から使い方についてざっと紹介してみました。参考になりましたら幸いです。</p>
                 
                   
                 
