@@ -1,0 +1,5 @@
+# For version control noise about diff occuring per building.
+# According to http://blog.serverkurabe.com/sitemap-xml-or-gz ,
+# A sitemap is OK either of .xml or .gz.
+# So, use .xml for avoiding this .gz noise.
+docs/sitemap.xml.gz
