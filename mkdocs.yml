@@ -13,3 +13,5 @@ markdown_extensions:
 extra:
   search:
     language: 'jp'
+extra_css:
+  - css/style.css
