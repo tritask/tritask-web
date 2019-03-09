@@ -114,7 +114,7 @@ Tritask が扱うタスクは、とてもシンプルなフォーマットをし
 ### メニューアクセス
 Tritask の操作はポップアップメニューから行います。
 
-!(tritask_menu)[tritask_menu.jpg]
+![tritask_menu](tritask_menu.jpg)
 
 マウス派の方は、ツールバーに配置してから呼び出せます。しかし Tritask はキーボードの方が素早く操作できるでしょう。
 
