@@ -7,6 +7,7 @@
 - [Tritask とは](overview.md)
 - [Tritask のコンセプト](concept.md)
 - [Tritask スタートアップガイド](startup_guide.md)
+- [GIF ギャラリー](gifs.md)
 
 ## ダウンロード
 - [Tritask 紹介ページ(GitHub)](https://github.com/tritask/tritask-sta)
