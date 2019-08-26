@@ -5,6 +5,7 @@
 
 ## 資料
 - [Tritask とは](overview.md)
+- [Tritask 紹介動画(Youtube)](https://www.youtube.com/watch?v=YwrIr6WNJK0)
 - [Tritask のコンセプト](concept.md)
 - [Tritask スタートアップガイド](startup_guide.md)
 - [GIF ギャラリー](gifs.md)
