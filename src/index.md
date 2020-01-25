@@ -22,6 +22,7 @@
 - 記事(内容が古いことがあります)
   - 18/03/19 [エンジニア向けのタスク管理ツールを作ってみた - Qiita](https://qiita.com/sta/items/2b1248869078ac8032d6)
   - 18/02/27 [エンジニア向けタスク管理ツール Tritask を作った - stamemo](http://stakiran.hatenablog.com/entry/2018/02/27/185034)
+- [#Tritask - Twitter](https://twitter.com/hashtag/Tritask?src=hash&f=live)
 
 ## 作者について
 - [@stakiran](https://stakiran.github.io/stakiran/)
