@@ -12,10 +12,10 @@
 
 ## ダウンロード
 - tritask-sta(秀丸エディタ + Python)
-  - [紹介ページ(GitHub)](https://github.com/tritask/tritask-sta)
   - [ダウンロード](https://tritask.github.io/tritask-sta-bin/)
+  - [GitHub リポジトリ](https://github.com/tritask/tritask-sta)
 - tritask-vscode(Visual Studio Code + Python)
-  - [ダウンロード(GitHub)](https://github.com/tritask/tritask-vscode)
+  - [GitHub リポジトリ](https://github.com/tritask/tritask-vscode)
 
 ## 開発者向けリンク
 - [Tritask エントランス](https://github.com/tritask/tritask)
