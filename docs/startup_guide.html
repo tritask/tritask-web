@@ -1510,9 +1510,12 @@
 <p>Tritask ではタスク名に <code>attrname:value</code> という文字列を書くと、当該 <strong>タスクに属性 attrname を付与する</strong> という意味になります。</p>
 <p>属性として以下があります。</p>
 <ul>
-<li>ルーチンタスクにする</li>
-<li>開始日を常に固定する</li>
+<li>ルーチンタスク - 繰り返し行うタスク(<code>rep:XX</code>)</li>
+<li>区切り - 開始日を常に固定する(<code>hold:XX</code>)</li>
+<li>スキップ - ルーチンタスクとして配置しない曜日を指定する(<code>skip:XX</code>)</li>
+<li>見積もり - タスクに要する時間をあらかじめ記載しておき、後の集計に役立てる(<code>m:XX</code>)</li>
 </ul>
+<p>以降ではルーチンタスクと区切りについて見ていきます。</p>
 <h3 id="_16">ルーチンタスク(定期タスク)<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
 <p>ルーチンタスクを実現するには、タスク名に <code>rep:N</code> を記述しておきます。そうすると、当該タスクを終了した時に、 <strong>開始日が +N 日された当該タスク</strong> が複製されます。</p>
 <p>例を見ていきましょう。</p>
