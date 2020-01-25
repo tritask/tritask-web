@@ -4,8 +4,6 @@
 ## Tritask とは
 Tritask は秀丸エディタ上で動作する行指向のタスク管理ツールです。煩雑な画面遷移や入力フォームに煩わされることなく、慣れ親しんだエディタ上でタスク管理を行うことができます。
 
-※厳密に言えば [Tritask は「タスク管理メソッド」](https://github.com/tritask/tritask-spec) であり、[Tritask-sta](https://github.com/tritask/tritask-sta) が「Tritask の一実装で、秀丸エディタ上で動作するツール」なのですが、紛らわしいので本ページでは Tritask-sta を Tritask と呼ぶことにします。
-
 ## はじめに
 Tritask のコンセプト紹介ですが、「システムコンセプト」「データコンセプト」「操作コンセプト」に分けて紹介していきます。
 
